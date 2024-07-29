@@ -1,0 +1,62 @@
+/* Defino la fuente principal y establezco una imagen de fondo para el cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../imagenes/viaje.jpg') no-repeat center center fixed; /* Ajusto la ruta según sea necesario */
+    background-size: cover; /* Ajusto la imagen para que cubra toda la pantalla */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Utilizo Flexbox en el cuerpo de la página */
+    justify-content: center; /* Centro horizontalmente */
+    align-items: center; /* Centro verticalmente */
+    height: 100vh; /* Ocupo toda la altura de la ventana */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    padding: 20px; /* Espaciado interno de 20px */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de profundidad */
+    width: 300px; /* Ancho fijo del contenedor */
+}
+
+/* Estilos para el encabezado h2 */
+h2 {
+    margin-bottom: 20px; /* Espaciado inferior de 20px */
+    text-align: center; /* Alineo el texto al centro */
+}
+
+/* Estilos para las etiquetas de los campos del formulario */
+label {
+    display: block; /* Hago que las etiquetas se comporten como bloques */
+    margin-bottom: 8px; /* Espaciado inferior de 8px */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de texto y número */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px); /* Ajusto el ancho para que ocupe el 100% menos 22px */
+    padding: 10px; /* Espaciado interno de 10px */
+    margin-bottom: 20px; /* Espaciado inferior de 20px */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Defino el estilo de los botones */
+.button {
+    padding: 10px 118px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #5d7172; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de profundidad */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del botón cuando paso el cursor sobre él */
+.button:hover {
+    background-color: #83b8bb; /* Cambio de color de fondo */
+}

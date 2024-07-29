@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Defino la codificación de caracteres y las propiedades de la ventana gráfica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Hotel</title>
+    <!-- Incluyo el archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluyo el archivo de validación de JavaScript y me aseguro de que se cargue de forma diferida -->
+    <script src="validacion.js" defer></script>
+</head>
+<body>
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <h2>Registrar Hotel</h2>
+        <!-- Creo el formulario con método POST que enviará los datos a procesar_formulario.php -->
+        <form id="formularioHotel" action="procesar_formulario.php" method="post">
+            <!-- Campo para ingresar el nombre del hotel -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Campo para ingresar la ubicación del hotel -->
+            <label for="ubicacion">Ubicación:</label>
+            <input type="text" id="ubicacion" name="ubicacion" required>
+
+            <!-- Campo para ingresar la cantidad de habitaciones disponibles -->
+            <label for="habitaciones_disponibles">Habitaciones Disponibles:</label>
+            <input type="number" id="habitaciones_disponibles" name="habitaciones_disponibles" required>
+
+            <!-- Campo para ingresar la tarifa por noche del hotel -->
+            <label for="tarifa_noche">Tarifa por Noche:</label>
+            <input type="number" step="0.01" id="tarifa_noche" name="tarifa_noche" required>
+
+            <!-- Botón para enviar el formulario -->
+            <input class="button" type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
