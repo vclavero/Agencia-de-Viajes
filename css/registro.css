@@ -1,0 +1,37 @@
+/* Aquí defino el estilo general del modal */
+.modal {
+    display: none; /* El modal está oculto por defecto */
+    position: fixed; /* Fijo el modal en la pantalla */
+    z-index: 1; /* Aseguro que el modal esté por encima de otros elementos */
+    left: 0; /* Posiciono el modal en la izquierda de la pantalla */
+    top: 0; /* Posiciono el modal en la parte superior de la pantalla */
+    width: 100%; /* El modal ocupa todo el ancho de la pantalla */
+    height: 100%; /* El modal ocupa todo el alto de la pantalla */
+    overflow: auto; /* Permito el scroll si el contenido es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente oscuro */
+}
+
+/* Aquí defino el estilo del contenido del modal */
+.modal-content {
+    background-color: #fefefe; /* Fondo blanco para el contenido del modal */
+    margin: 3% auto; /* Margen superior del 3% y centrado horizontal automático */
+    padding: 20px; /* Espacio interior del contenido */
+    border: 1px solid #888; /* Borde gris */
+    width: 80%; /* El contenido del modal ocupa el 80% del ancho de la pantalla */
+}
+
+/* Aquí defino el estilo del botón de cerrar */
+.close {
+    color: #aaa; /* Color gris claro para la X de cerrar */
+    float: right; /* Flota a la derecha del contenedor */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilo del botón de cerrar cuando el cursor está sobre él o enfocado */
+.close:hover,
+.close:focus {
+    color: black; /* Cambio a color negro */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cursor de mano para indicar interactividad */
+}

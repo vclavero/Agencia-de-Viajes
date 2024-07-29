@@ -1,0 +1,59 @@
+/* Aquí defino la fuente principal del sitio web */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Establezco estilos generales para los contenedores del formulario y de la lista */
+.form-container, .list-container {
+    max-width: 600px; /* Establezco un ancho máximo para los contenedores */
+    margin: 20px auto; /* Centrado vertical y horizontal con margen superior e inferior */
+    padding: 20px; /* Añadir espacio interior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra sutil alrededor de los contenedores */
+}
+
+/* Aquí defino el estilo para los encabezados de segundo nivel */
+h2 {
+    text-align: center; /* Centro el texto de los encabezados */
+}
+
+/* Aquí defino estilos generales para las tablas */
+table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Bordes colapsados para un diseño más limpio */
+    margin-bottom: 20px; /* Espacio inferior entre la tabla y otros elementos */
+}
+
+/* Aplico bordes a la tabla y a las celdas de encabezado y datos */
+table, th, td {
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Aplico estilos a las celdas de encabezado y datos */
+th, td {
+    padding: 10px; /* Espacio interior en las celdas */
+    text-align: left; /* Alineación a la izquierda para el texto de las celdas */
+}
+
+/* Estilo adicional para las celdas de encabezado */
+th {
+    background-color: #f4f4f4; /* Fondo gris claro para los encabezados */
+}
+
+/* Aquí defino el estilo para los botones de envío */
+input[type="submit"] {
+    display: block; /* El botón ocupa una línea completa */
+    width: 100%; /* El botón ocupa todo el ancho del contenedor */
+    padding: 10px; /* Espacio interior en el botón */
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano para indicar interactividad */
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre el botón */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Fondo verde más oscuro al pasar el cursor */
+}

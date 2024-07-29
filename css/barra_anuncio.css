@@ -1,0 +1,18 @@
+#imagen-flotante {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%; /* Tamaño de la imagen en pantallas grandes */
+    transition: transform 1s ease-in-out;
+    transform: translateY(100%);
+}
+#imagen-flotante.visible {
+    transform: translateY(0);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    #imagen-flotante {
+        width: 50%; /* Ajusta el tamaño de la imagen para pantallas móviles */
+    }
+}

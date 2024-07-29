@@ -1,0 +1,353 @@
+/* Estilos generales para el cuerpo y centrado de los contenedores */
+.container_login {
+    display: flex;
+    flex-wrap: wrap; /* Permito que los contenedores se ajusten de forma adecuada */
+    justify-content: space-around;
+    max-width: 1200px; /* Establezco un ancho máximo para la sección de contenedores */
+    width: 90%; /* Para dispositivos más pequeños, el ancho será del 90% */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Aquí defino el estilo para cada contenedor individual */
+.box {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Defino el ancho inicial de cada contenedor */
+    margin: 10px; /* Espacio entre contenedores */
+    min-height: 600px; /* Establezco una altura mínima para cada contenedor */
+}
+
+/* Media query para ajustar a dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajusto el ancho de los contenedores en dispositivos móviles */
+    .box {
+        width: 90%; /* Hago que los contenedores ocupen todo el ancho disponible en dispositivos móviles */
+    }
+}
+
+/* Aquí defino los márgenes y la alineación a la izquierda para los grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Aquí defino los márgenes y la alineación a la izquierda para el calendario */
+.input-group2 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Quiero que las etiquetas sean bloques visibles con buen tamaño de fuente */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Para el calendario */
+.input-group2 label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Los campos de entrada y selección deben ser amplios y tener bordes redondeados */
+.input-group select,
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Para el calendario */
+.input-group2 select,
+.input-group2 input {
+    width: 185px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Aquí defino el estilo de los botones */
+.button {
+    padding: 10px 9px;
+    width: 184px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5d7172;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #83b8bb;
+}
+
+/* Aquí defino el estilo para el botón del carrito */
+.button_carrito {
+    padding: 10px 9px;
+    width: 184px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a5007a;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button_carrito:hover {
+    background-color: #7f005e;
+}
+
+/* Aquí defino los estilos del botón de cerrar */
+.button_cerrar {
+    background-color: #333333;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    float: right;
+}
+
+/* Aquí defino los efectos al pasar el mouse sobre el botón de cerrar */
+.button_cerrar:hover {
+    background-color: #6a6a6a; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Aquí defino el estilo del contenedor deslizante */
+.slide-out-container {
+    position: fixed;
+    right: -300px; /* Ajusto el valor según sea necesario */
+    top: 0;
+    width: 300px; /* Ajusto el valor según sea necesario */
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    overflow-y: auto; /* Añadimos scroll vertical */
+    padding: 20px;
+}
+
+.slide-out-container.active {
+    right: 0;
+}
+
+/* Aquí defino el estilo del contenido del carrito */
+#carrito {
+    max-height: 80%; /* Limito la altura del contenido para permitir el scroll */
+    overflow-y: auto; /* Añadimos scroll vertical al contenido del carrito */
+}
+
+/* Aquí defino los estilos para el botón de finalizar compra */
+.button_finalizar_compra {
+    padding: 10px 9px;
+    width: 184px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a5007a;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button_finalizar_compra:hover {
+    background-color: #7f005e;
+}
+
+/* Aquí defino los estilos para el botón de eliminar compra */
+.button_eliminar_compra {
+    padding: 10px 9px;
+    width: 184px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e40055;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.button_eliminar_compra:hover {
+    background-color: #d6648e;
+}
+
+/* Para los controles deslizantes, ajusto el ancho */
+.input-group input[type="range"] {
+    width: 50%;
+}
+
+/* Aquí defino el estilo del contenedor deslizante */
+.slide-out-container {
+    position: fixed;
+    top: 0;
+    left: -346px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(42, 42, 42);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: left 0.3s ease;
+}
+
+/* El contenedor deslizante debe moverse a la pantalla cuando está activo */
+.slide-out-container.active {
+    left: 0; /* Deslizo dentro de la pantalla al hacer clic */
+}
+
+/* Aquí defino el estilo del contenedor deslizante con fondo azul oscuro */
+.slide-out-container {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(0, 27, 40);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+/* El contenedor deslizante debe moverse a la pantalla cuando está activo */
+.slide-out-container.active {
+    left: 0; /* Deslizo dentro de la pantalla al hacer clic */
+}
+
+/* Aquí defino el estilo del área de activación */
+.trigger-area {
+    position: fixed;
+    top: 25px;
+    left: -53px;
+    width: 122px;
+    /* height: 66%; */
+    z-index: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+/* El texto en el área de activación debe ser vertical y contrastante */
+.trigger-area span {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 21px;
+    color: yellow;
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 13px;
+    position: absolute;
+    top: 109px;
+    right: 24px;
+    height: 270px;
+}
+
+/* Aquí coloco los indicadores económicos */
+.ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+    background: #333;
+    color: white;
+    padding: 0px 0;
+}
+
+/* Aquí defino el estilo del contenedor de las noticias */
+.ticker {
+    display: flex;
+    width: 100%; /* Aseguro que el contenedor tenga el doble del ancho */
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+/* Aquí defino el estilo de cada noticia individual */
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    width: 100%; /* Aseguro que el elemento tenga el ancho del contenedor padre */
+}
+
+/* Aquí defino el estilo de los iconos dentro de las noticias */
+.ticker-icon {
+    margin: 0 10px; /* Espacio a los lados de la imagen */
+    height: 24px; /* Ajusto el tamaño de la imagen según sea necesario */
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); /* Muevo el contenedor a la mitad */
+    }
+}
+
+/* Aquí defino el estilo del contenedor deslizante */
+.slide-out-container {
+    position: fixed;
+    right: -300px; /* Ajusto el valor según sea necesario */
+    top: 0;
+    width: 300px; /* Ajusto el valor según sea necesario */
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    overflow-y: auto; /* Añadimos scroll vertical */
+    padding: 20px;
+}
+
+/* Aquí defino el estilo del contenedor deslizante cuando está activo */
+.slide-out-container.active {
+    right: 0;
+}
+
+/* Aquí defino el estilo del contenido del carrito */
+#carrito {
+    max-height: 80%; /* Limito la altura del contenido para permitir el scroll */
+    overflow-y: auto; /* Añadimos scroll vertical al contenido del carrito */
+}
+
+/* Aquí defino el estilo del botón de cerrar dentro del contenedor deslizante */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    text-align: center; /* Centro el texto */
+    font-size: 20px;
+}
+
+/* Aquí defino el estilo de la X para cerrar */
+.close-x {
+    display: block;
+    font-size: 20px;
+}
+
+/* Aquí defino el estilo del texto de cerrar */
+.close-text {
+    display: block;
+    font-size: 12px;
+}
